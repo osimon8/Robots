@@ -1,0 +1,40 @@
+#LEGO 1
+	elsif(i==6) then #lego1
+		if(v==1) then
+			#UP FROM LAST DROP
+			@in.servos[1].data[:value]= 1800
+			output "trig","1"
+			input 6, 90, t+0.3
+		elsif(v==90)
+			@in.Move 1685,1500,1940,1250,500,970
+			output "trig","1"
+			input 6, 2, t+2.0	
+		elsif(v==2) then
+			#down
+			@in.Move 1685,1330,1910,1250,500,970
+			output "trig","1"
+			input 6, 3, t+1.0			
+		elsif(v == 3) then
+			#close
+			@in.servos[4].data[:value]= 1450
+			output "trig","1"
+			input 6, 4, t+1
+		elsif(v ==4) then
+			#neutral 1
+			@in.servos[0].data[:value]= 1500
+			@in.servos[1].data[:value]= 1450
+			output "trig","1"
+			input 6,6, t+0.25
+		elsif(v ==5) then
+		elsif(v==6) then 
+			#carton
+			@in.Move1 @leg1
+			output "trig","1"
+			input 6,7,t+2.3
+		elsif(v==7)
+			#open
+			@in.servos[4].data[:value] = 500
+			output "trig","1"
+			#TO LEGO2	
+			input 7,1,t+0.75
+		end
