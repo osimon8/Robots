@@ -42,3 +42,13 @@ Southwest Stack Initial:
 3: 1060
 4: 500
 5: 1400
+
+
+Southwest Stack Number 2:
+
+0: 1860
+1: 990
+2: 1660
+3: 1060
+4: 500
+5: 1400
